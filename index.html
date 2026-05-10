@@ -65,6 +65,7 @@
             display: block;
         }
 
+
         button {
             cursor: pointer;
             border: none;
@@ -343,6 +344,81 @@
             display: flex;
             gap: 8px;
             align-items: center;
+        }
+
+        .hero-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+
+            display: block;
+            margin: 80px auto 40px;
+            /* top right-left bottom */
+
+            border: 5px solid #ff7b00;
+            box-shadow: 0 0 30px rgba(255, 123, 0, 0.6);
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: #00d9ff;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .hero-description {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .primary {
+            background: #00d9ff;
+            color: black;
+        }
+
+        .primary:hover {
+            background: #00aacc;
+        }
+
+        .secondary {
+            border: 2px solid #00d9ff;
+            color: #00d9ff;
+        }
+
+        .secondary:hover {
+            background: #00d9ff;
+            color: black;
         }
 
         .nav-links a {
@@ -1869,10 +1945,33 @@
     </header>
 
     <!-- ===== HERO ===== -->
+    <!-- Banner/Profile Image -->
+    </section>
     <section id="home" role="banner">
+
         <div class="hero-bg"></div>
         <div class="hero-particles" id="particles"></div>
+        <img src="image.jpeg" alt="Habiba Butt" class="hero-img">
         <div class="hero-content">
+
+            <h1 class="hero-title">Habiba Butt</h1>
+
+            <p class="hero-subtitle">Social Media Marketing Manager</p>
+
+            <p class="hero-description">
+                I am a 24-year-old young entrepreneur with a successful career spanning from 2021 to 2026. I specialize
+                in managing social media platforms, improving SEO performance, and coordinating digital projects. My
+                focus is on building strong and impactful online presences for brands through creative strategies,
+                data-driven decisions, and consistent growth.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Contact Me</a>
+                <a href="#portfolio" class="btn secondary">View Work</a>
+            </div>
+
+        </div>
+        <div class="hero-content">
+
             <div class="hero-badge">Welcome to My Digital World</div>
             <h1 class="hero-name">I'm <span class="gradient-text">Habiba Butt</span></h1>
             <div class="hero-title">
@@ -1883,7 +1982,6 @@
             </div>
             <div class="hero-btns">
                 <a href="#contact" class="btn-primary">Let's Work Together</a>
-                <a href="#portfolio" class="btn-secondary">View My Work</a>
             </div>
         </div>
         <div class="scroll-indicator" aria-label="Scroll down"></div>
